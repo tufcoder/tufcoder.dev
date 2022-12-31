@@ -52,11 +52,7 @@ img {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   font-weight: 400;
   letter-spacing: .125rem; /* 2px */
 }
@@ -117,7 +113,6 @@ h6 {
   border-radius: .5rem;
   padding: 1rem;
   cursor: pointer;
-  background-image: linear-gradient(to bottom right, var(--purple-gradient), var(--blue-gradient));
 }
 
 .job h3 {
@@ -152,6 +147,10 @@ h6 {
 .job-active:after {
   content: "\2796";
   color: var(--text);
+}
+
+.gradient {
+  background-image: linear-gradient(to bottom right, var(--purple-gradient), var(--blue-gradient));
 }
 
 .blue-background,

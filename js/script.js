@@ -6,16 +6,18 @@ jobs.forEach(job => {
 
     job.classList.toggle('job-active');
 
-    if (content.parentNode.classList.contains('green-hover')) {
-      content.parentNode.classList.toggle('green-background');
-    } else if (content.parentNode.classList.contains('blue-hover')) {
-      content.parentNode.classList.toggle('blue-background');
-    } else if (content.parentNode.classList.contains('orange-hover')) {
-      content.parentNode.classList.toggle('orange-background');
-    } else if (content.parentNode.classList.contains('dark-blue-hover')) {
-      content.parentNode.classList.toggle('dark-blue-background');
-    } else if (content.parentNode.classList.contains('yellow-hover')) {
-      content.parentNode.classList.toggle('yellow-background');
+    if (job.classList.contains('green-hover')) {
+      job.classList.toggle('green-background');
+    } else if (job.classList.contains('blue-hover')) {
+      job.classList.toggle('blue-background');
+    } else if (job.classList.contains('orange-hover')) {
+      job.classList.toggle('orange-background');
+    } else if (job.classList.contains('dark-blue-hover')) {
+      job.classList.toggle('dark-blue-background');
+    } else if (job.classList.contains('yellow-hover')) {
+      job.classList.toggle('yellow-background');
+    } else {
+      job.classList.toggle('gradient');
     }
 
     if (content.style.maxHeight) {
