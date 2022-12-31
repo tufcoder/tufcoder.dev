@@ -10,7 +10,7 @@
   --green-hover: rgb(3, 75, 3);
   --orange-hover: rgb(233, 119, 43);
   --dark-blue-hover: rgb(22, 2, 206);
-  --yellow-hover: rgb(122, 120, 3);
+  --yellow-hover: rgb(141, 139, 2);
 }
 
 html {
@@ -116,8 +116,8 @@ h6 {
   position: relative;
   border-radius: .5rem;
   padding: 1rem;
-  background-image: linear-gradient(to bottom right, var(--purple-gradient), var(--blue-gradient));
   cursor: pointer;
+  background-image: linear-gradient(to bottom right, var(--purple-gradient), var(--blue-gradient));
 }
 
 .job h3 {
@@ -145,10 +145,13 @@ h6 {
   right: 0;
   content: '\02795';
   font-size: 0.75rem; /* 12px */
+  border-radius: 50%;
+  background-color: var(--black);
 }
 
 .job-active:after {
   content: "\2796";
+  color: var(--text);
 }
 
 .blue-background,
