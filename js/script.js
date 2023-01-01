@@ -19,7 +19,7 @@ jobs.forEach(job => {
     }
 
     if (content.style.maxHeight) {
-      content.style.maxHeight = 0;
+      content.style.maxHeight = null;
     } else {
       content.style.maxHeight = `${content.scrollHeight}px`;
     }
