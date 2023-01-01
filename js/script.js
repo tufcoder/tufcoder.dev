@@ -16,14 +16,12 @@ jobs.forEach(job => {
       job.classList.toggle('dark-blue-background');
     } else if (job.classList.contains('yellow-hover')) {
       job.classList.toggle('yellow-background');
-    } else {
-      job.classList.toggle('gradient');
     }
 
     if (content.style.maxHeight) {
-      content.style.maxHeight = null;
+      content.style.maxHeight = 0;
     } else {
-      content.style.maxHeight = content.scrollHeight + 'px';
+      content.style.maxHeight = `${content.scrollHeight}px`;
     }
   });
 });
