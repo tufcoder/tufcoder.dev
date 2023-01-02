@@ -2,9 +2,10 @@ const jobs = document.querySelectorAll('.job');
 
 jobs.forEach(job => {
   job.addEventListener('click', function() {
-    const content = this.children[2];
+    const content = this.querySelector('.job-content');
+    const tooltip = this.querySelector('.tooltip');
 
-    job.classList.toggle('job-active');
+    this.classList.toggle('job-active');
 
     if (job.classList.contains('green-hover')) {
       job.classList.toggle('green-background');
@@ -20,8 +21,10 @@ jobs.forEach(job => {
 
     if (content.style.maxHeight) {
       content.style.maxHeight = null;
+      tooltip.innerText = 'Click to expand';
     } else {
       content.style.maxHeight = `${content.scrollHeight}px`;
+      tooltip.innerText = 'Click to shrink';
     }
   });
 });

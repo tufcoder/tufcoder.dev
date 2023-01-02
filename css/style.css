@@ -4,13 +4,19 @@
   --outline: rgba(6, 187, 0, .7);
   --text: #fdf7f7;
   --text-opacity: rgba(253, 247, 247, .5);
-  --blue-gradient: rgb(31, 0, 104);
+  --red-gradient: rgb(168, 11, 37);
+  --blue-gradient: rgb(51, 1, 167);
   --purple-gradient: rgb(83, 0, 83);
-  --blue-hover: rgb(72 99 247);
-  --green-hover: rgb(3, 75, 3);
-  --orange-hover: rgb(233, 119, 43);
-  --dark-blue-hover: rgb(22, 2, 206);
-  --yellow-hover: rgb(141, 139, 2);
+  --green-hover1: rgb(12, 139, 12);
+  --green-hover2: rgb(3, 75, 3);
+  --blue-hover1: rgb(89, 113, 248);
+  --blue-hover2: rgb(46, 46, 189);
+  --orange-hover1: rgb(223, 149, 13);
+  --orange-hover2: rgb(233, 119, 43);
+  --dark-blue-hover1: rgb(47, 47, 241);
+  --dark-blue-hover2: rgb(19, 4, 156);
+  --yellow-hover1: rgb(189, 189, 5);
+  --yellow-hover2: rgb(150, 147, 4);
 }
 
 html {
@@ -134,53 +140,89 @@ h2 {
   text-align: left;
 }
 
-.job:after {
+.job::after {
   position: absolute;
   top: 0;
   right: 0;
+  padding: 0.3125rem; /* 5px */
   content: '\02795';
   font-size: 0.75rem; /* 12px */
   border-radius: 50%;
   background-color: var(--black);
 }
 
-.job-active:after {
+.job-active::after {
   content: "\2796";
   color: var(--text);
 }
 
-.gradient {
-  background-image: linear-gradient(to bottom right, var(--purple-gradient), var(--blue-gradient));
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  border-radius: 0.125rem;
+  padding: 0.125rem 0.5rem; /* 2px 4px */
+  color: var(--black);
+  background-color: var(--white);
 }
 
-.blue-background,
-.blue-hover:hover {
-  background-image: none;
-  background-color: var(--blue-hover);
+.tooltip::after {
+  position: absolute;
+  top: 100%;
+  right: 5%;
+  content: '';
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--white) transparent transparent transparent;
+  z-index: 1;
+}
+
+.gradient {
+  background-image: linear-gradient(to bottom right, var(--red-gradient), var(--purple-gradient), var(--blue-gradient));
+}
+
+.green-hover:hover > .tooltip,
+.blue-hover:hover > .tooltip,
+.orange-hover:hover > .tooltip,
+.dark-blue-hover:hover > .tooltip,
+.yellow-hover:hover > .tooltip {
+  visibility: visible;
 }
 
 .green-background,
 .green-hover:hover {
   background-image: none;
-  background-color: var(--green-hover);
+  background-color: var(--green-hover1);
+  background-image: linear-gradient(var(--green-hover1), var(--green-hover2));
+}
+
+.blue-background,
+.blue-hover:hover {
+  background-image: none;
+  background-color: var(--blue-hover1);
+  background-image: linear-gradient(var(--blue-hover1), var(--blue-hover2));
 }
 
 .orange-background,
 .orange-hover:hover {
   background-image: none;
-  background-color: var(--orange-hover);
+  background-color: var(--orange-hover1);
+  background-image: linear-gradient(var(--orange-hover1), var(--orange-hover2));
 }
 
 .dark-blue-background,
 .dark-blue-hover:hover {
   background-image: none;
-  background-color: var(--dark-blue-hover);
+  background-color: var(--dark-blue-hover1);
+  background-image: linear-gradient(var(--dark-blue-hover1), var(--dark-blue-hover2));
 }
 
 .yellow-background,
 .yellow-hover:hover {
   background-image: none;
-  background-color: var(--yellow-hover);
+  background-color: var(--yellow-hover1);
+  background-image: linear-gradient(var(--yellow-hover1), var(--yellow-hover2));
 }
 
 footer {
