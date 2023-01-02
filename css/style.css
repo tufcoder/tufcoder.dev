@@ -4,9 +4,10 @@
   --outline: rgba(6, 187, 0, .7);
   --text: #fdf7f7;
   --text-opacity: rgba(253, 247, 247, .5);
-  --red-gradient: rgb(168, 11, 37);
-  --blue-gradient: rgb(51, 1, 167);
-  --purple-gradient: rgb(83, 0, 83);
+  /* --purple-gradient3: rgb(88, 14, 26); */
+  --purple-gradient1: rgb(100, 7, 100);
+  --purple-gradient2: rgb(87, 9, 87);
+  --purple-gradient3: rgb(68, 1, 68);
   --green-hover1: rgb(12, 139, 12);
   --green-hover2: rgb(3, 75, 3);
   --blue-hover1: rgb(89, 113, 248);
@@ -15,7 +16,7 @@
   --orange-hover2: rgb(233, 119, 43);
   --dark-blue-hover1: rgb(47, 47, 241);
   --dark-blue-hover2: rgb(19, 4, 156);
-  --yellow-hover1: rgb(189, 189, 5);
+  --yellow-hover1: rgb(172, 172, 4);
   --yellow-hover2: rgb(150, 147, 4);
 }
 
@@ -111,13 +112,18 @@ h2 {
 }
 
 .jobs {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .job {
   position: relative;
   border-radius: .5rem;
   padding: 1rem;
+  width: min(500px, 95%);
+  text-align: center;
   cursor: pointer;
 }
 
@@ -179,7 +185,7 @@ h2 {
 }
 
 .gradient {
-  background-image: linear-gradient(to bottom right, var(--red-gradient), var(--purple-gradient), var(--blue-gradient));
+  background-image: linear-gradient(to top left, var(--purple-gradient1), var(--purple-gradient2), var(--purple-gradient3));
 }
 
 .green-hover:hover > .tooltip,
