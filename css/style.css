@@ -4,7 +4,6 @@
   --outline: rgba(6, 187, 0, .7);
   --text: #fdf7f7;
   --text-opacity: rgba(253, 247, 247, .5);
-  /* --purple-gradient3: rgb(88, 14, 26); */
   --purple-gradient1: rgb(100, 7, 100);
   --purple-gradient2: rgb(87, 9, 87);
   --purple-gradient3: rgb(68, 1, 68);
@@ -48,6 +47,11 @@ body {
   padding: 0;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 a {
@@ -99,6 +103,7 @@ h2 {
 }
 
 .at {
+  margin-bottom: 0.5rem;
   font-size: .875rem; /* 14px */
   color: var(--text-opacity);
 }
@@ -116,6 +121,16 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.button-collapse {
+  align-self: start;
+  margin-left: 4rem;
+  border: none;
+  border-radius: .125rem; /* 2px */
+  padding: 0.3125rem; /* 5px */
+  color: var(--text);
+  cursor: pointer;
 }
 
 .job {

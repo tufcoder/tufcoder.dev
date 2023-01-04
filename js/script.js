@@ -1,4 +1,6 @@
 const jobs = document.querySelectorAll('.job');
+const collapse = document.querySelector('.button-collapse');
+let isCollapsible = true;
 
 jobs.forEach(job => {
   job.addEventListener('click', function() {
@@ -27,4 +29,23 @@ jobs.forEach(job => {
       tooltip.innerText = 'Click to shrink';
     }
   });
+});
+
+collapse.addEventListener('click', function () {
+  this.innerText = isCollapsible ? 'Shrink all (-)' : 'Expand all (+)';
+
+  jobs.forEach(job => {
+    if (isCollapsible) {
+      if (!job.classList.contains('job-active')) {
+        job.dispatchEvent(new Event('click'));
+      }
+    }
+    else if (isCollapsible === false) {
+      if (job.classList.contains('job-active')) {
+        job.dispatchEvent(new Event('click'));
+      }
+    }
+  })
+
+  isCollapsible = !isCollapsible;
 });
