@@ -125,6 +125,7 @@ h2 {
 
 .button-collapse {
   align-self: start;
+  margin-top: 0.5rem;
   margin-left: 4rem;
   border: none;
   border-radius: .125rem; /* 2px */
