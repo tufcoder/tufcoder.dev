@@ -32,7 +32,7 @@ jobs.forEach(job => {
 });
 
 collapse.addEventListener('click', function () {
-  this.innerText = isCollapsible ? 'Shrink all (-)' : 'Expand all (+)';
+  this.innerText = isCollapsible ? 'Recolher tudo (-)' : 'Expandir tudo (+)';
 
   jobs.forEach(job => {
     if (isCollapsible) {
