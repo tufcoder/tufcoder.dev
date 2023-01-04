@@ -26,7 +26,7 @@ jobs.forEach(job => {
       tooltip.innerText = 'Clique para expandir';
     } else {
       content.style.maxHeight = `${content.scrollHeight}px`;
-      tooltip.innerText = 'Clique para encolher';
+      tooltip.innerText = 'Clique para recolher';
     }
   });
 });
