@@ -23,10 +23,10 @@ jobs.forEach(job => {
 
     if (content.style.maxHeight) {
       content.style.maxHeight = null;
-      tooltip.innerText = 'Click to expand';
+      tooltip.innerText = 'Clique para expandir';
     } else {
       content.style.maxHeight = `${content.scrollHeight}px`;
-      tooltip.innerText = 'Click to shrink';
+      tooltip.innerText = 'Clique para encolher';
     }
   });
 });
