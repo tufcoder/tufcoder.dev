@@ -47,6 +47,7 @@ body {
   padding: 0;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 button {
@@ -114,6 +115,10 @@ h2 {
 
 .infos {
   text-align: center;
+}
+
+.infos h3 {
+  font-weight: 400;
 }
 
 .jobs {
