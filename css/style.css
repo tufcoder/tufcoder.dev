@@ -25,7 +25,9 @@ html {
   -moz-box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
@@ -66,14 +68,18 @@ img {
 h1,
 h2 {
   font-weight: 400;
-  letter-spacing: .125rem; /* 2px */
+  letter-spacing: .125rem;
+  /* 2px */
 }
 
-.container {
+.container,
+.container header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+}
+
+.container {
   padding: 2rem 0;
   margin: 0 auto;
   width: min(800px, 85%);
@@ -96,16 +102,19 @@ h2 {
 }
 
 .title {
-  font-size: 1.75rem; /* 28px */
+  font-size: 1.75rem;
+  /* 28px */
 }
 
 .subtitle {
-  font-size: 1.5rem; /* 24px */
+  font-size: 1.5rem;
+  /* 24px */
 }
 
 .at {
   margin-bottom: 0.5rem;
-  font-size: .875rem; /* 14px */
+  font-size: .875rem;
+  /* 14px */
   color: var(--text-opacity);
 }
 
@@ -130,8 +139,10 @@ h2 {
 
 .button-collapse {
   border: none;
-  border-radius: .125rem; /* 2px */
-  padding: 0.3125rem; /* 5px */
+  border-radius: .125rem;
+  /* 2px */
+  padding: 0.3125rem;
+  /* 5px */
   color: var(--text);
   cursor: pointer;
 }
@@ -168,9 +179,11 @@ h2 {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 0.3125rem; /* 5px */
+  padding: 0.3125rem;
+  /* 5px */
   content: '\02795';
-  font-size: 0.75rem; /* 12px */
+  font-size: 0.75rem;
+  /* 12px */
   border-radius: 50%;
   background-color: var(--black);
 }
@@ -186,7 +199,8 @@ h2 {
   bottom: 100%;
   right: 0;
   border-radius: 0.125rem;
-  padding: 0.125rem 0.5rem; /* 2px 4px */
+  padding: 0.125rem 0.5rem;
+  /* 2px 4px */
   color: var(--black);
   background-color: var(--white);
 }
@@ -206,11 +220,11 @@ h2 {
   background-image: linear-gradient(to top left, var(--purple-gradient1), var(--purple-gradient2), var(--purple-gradient3));
 }
 
-.green-hover:hover > .tooltip,
-.blue-hover:hover > .tooltip,
-.orange-hover:hover > .tooltip,
-.dark-blue-hover:hover > .tooltip,
-.yellow-hover:hover > .tooltip {
+.green-hover:hover>.tooltip,
+.blue-hover:hover>.tooltip,
+.orange-hover:hover>.tooltip,
+.dark-blue-hover:hover>.tooltip,
+.yellow-hover:hover>.tooltip {
   visibility: visible;
 }
 
