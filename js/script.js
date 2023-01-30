@@ -3,7 +3,7 @@ const collapse = document.querySelector('.button-collapse');
 let isCollapsible = true;
 
 jobs.forEach(job => {
-  job.addEventListener('click', function() {
+  job.addEventListener('click', function () {
     const content = this.querySelector('.job-content');
     const tooltip = this.querySelector('.tooltip');
 

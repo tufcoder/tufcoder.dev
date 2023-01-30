@@ -122,8 +122,10 @@ h2 {
   font-size: 1.5rem;
 }
 
+.mail,
 .infos {
   text-align: center;
+  font-style: normal;
 }
 
 .infos h3 {
