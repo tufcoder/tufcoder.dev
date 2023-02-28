@@ -72,6 +72,26 @@ h2 {
   /* 2px */
 }
 
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--purple-gradient1) transparent;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--purple-gradient1);
+  border-radius: 20px;
+}
+
 .container,
 .container header {
   display: flex;
@@ -268,24 +288,4 @@ h2 {
 footer {
   text-align: center;
   font-size: .75rem;
-}
-
-/* Works on Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: var(--purple-gradient1) transparent;
-}
-
-/* Works on Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  width: 12px;
-}
-
-*::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: var(--purple-gradient1);
-  border-radius: 20px;
 }
