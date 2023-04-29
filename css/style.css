@@ -17,6 +17,8 @@
   --dark-blue-hover2: rgb(19, 4, 156);
   --yellow-hover1: rgb(172, 172, 4);
   --yellow-hover2: rgb(150, 147, 4);
+  --red-hover1: rgb(172, 38, 4);
+  --red-hover2: rgb(150, 9, 4);
 }
 
 html {
@@ -152,6 +154,20 @@ h2 {
   font-weight: 400;
 }
 
+.tags {
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+}
+
+.tags li {
+  border-radius: .5rem;
+  padding: .5rem;
+  list-style: none;
+  width: 85px;
+  font-weight: bold;
+}
+
 .jobs {
   display: flex;
   flex-direction: column;
@@ -283,6 +299,13 @@ h2 {
   background-image: none;
   background-color: var(--yellow-hover1);
   background-image: linear-gradient(var(--yellow-hover1), var(--yellow-hover2));
+}
+
+.red-background,
+.red-hover:hover {
+  background-image: none;
+  background-color: var(--red-hover1);
+  background-image: linear-gradient(var(--red-hover1), var(--red-hover2));
 }
 
 footer {
