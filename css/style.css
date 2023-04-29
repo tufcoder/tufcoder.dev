@@ -119,7 +119,8 @@ h2 {
 .infos,
 .jobs,
 .job,
-.job-content {
+.job-content,
+.tags {
   margin-top: 1rem;
 }
 
