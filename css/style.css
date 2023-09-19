@@ -44,6 +44,11 @@ body {
   line-height: 1.4;
   color: var(--text);
   background-color: var(--black);
+  background-color: rgba(0, 0, 0, .3);
+  background-image: url('https://source.unsplash.com/random/6000x3376/?programming');
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 * {
@@ -99,12 +104,22 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: min(100%, 390px);
+  max-width: 600px;
+}
+
+footer,
+.jobs,
+.container header {
+  width: 100%;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: var(--black);
 }
 
 .container {
   padding: 2rem 0;
   margin: 0 auto;
-  width: min(800px, 85%);
 }
 
 .img-wrapper {
@@ -310,6 +325,14 @@ h2 {
 }
 
 footer {
+  border-radius: 0;
   text-align: center;
   font-size: .75rem;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    background-color: var(--black);
+    background-image: none;
+  }
 }
