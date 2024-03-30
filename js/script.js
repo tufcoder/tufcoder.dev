@@ -1,3 +1,6 @@
+const copyrightDate = document.querySelector('#copyrightDate')
+copyrightDate.innerText = '© ' + new Date().getFullYear() + ' ΤυϜ'
+
 const jobs = document.querySelectorAll('.job');
 const collapse = document.querySelector('.button-collapse');
 let isCollapsible = true;
