@@ -2,7 +2,7 @@
   --black: #1f1f1f;
   --white: #ebe4e4;
   --outline: rgba(6, 187, 0, .7);
-  --text: #fdf7f7;
+  --text: #f7e7e7;
   --text-opacity: rgba(253, 247, 247, .5);
   --purple-gradient1: rgb(100, 7, 100);
   --purple-gradient2: rgb(87, 9, 87);
@@ -135,7 +135,9 @@ footer,
 .jobs,
 .job,
 .job-content,
-.tags {
+.tag,
+.tags,
+.tags-resume {
   margin-top: 1rem;
 }
 
@@ -170,18 +172,30 @@ footer,
   font-weight: 400;
 }
 
-.tags {
+.tag,
+.tags,
+.tags-resume {
   display: flex;
   gap: .5rem;
   justify-content: center;
+  list-style: none;
 }
 
-.tags li {
+.tag,
+.tags li,
+.tags-resume li {
   border-radius: .5rem;
   padding: .5rem;
-  list-style: none;
-  width: 5rem;
   font-weight: bold;
+}
+
+.tag,
+.tags li {
+  width: 5rem;
+}
+
+.tag {
+  margin: 0 auto;
 }
 
 .jobs {
