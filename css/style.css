@@ -19,6 +19,7 @@
   --yellow-hover2: rgb(150, 147, 4);
   --red-hover1: rgb(172, 38, 4);
   --red-hover2: rgb(150, 9, 4);
+  --455px: 28.4375em;
 }
 
 html {
@@ -355,7 +356,7 @@ footer {
   font-size: .75rem;
 }
 
-@media screen and (max-width: 455px) {
+@media screen and (max-width: var(--455px)) {
   body {
     background-color: var(--black);
     background-image: none;
