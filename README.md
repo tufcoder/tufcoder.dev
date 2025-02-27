@@ -8,4 +8,4 @@ His content is to summarize my professional experiences.
 
 Please feel free to contact me any time.
 
-It's live in [https://tufcoder.netlify.app](https://tufcoder.netlify.app)
+It's live in <https://oswaldo-castro.netlify.app>
