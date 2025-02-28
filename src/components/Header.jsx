@@ -18,6 +18,8 @@ export function Header() {
   return (
     <header className="bg-gray-950 flex flex-col items-center rounded-sm md:rounded-md lg:rounded-lg p-2 md:p-4 lg:p-6 gap-1 md:gap-2 lg:gap-4">
       <img
+        width={400}
+        height={400}
         className="w-16 md:w-32 lg:64 rounded-full outline-2 md:outline-3 lg:outline-4 outline-green-700"
         src="/profile.jpg"
         alt="profile picture"
@@ -40,7 +42,7 @@ export function Header() {
             {data.person.links.email}
           </a>
         </small>
-        <h3>
+        <h3 className="md:text-3xl">
           {data.person.role.web} | {data.person.role.pj}
         </h3>
         <h4>
