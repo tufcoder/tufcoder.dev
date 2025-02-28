@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { GithubLogo } from "phosphor-react";
 import { data } from "../assets/data";
 
@@ -12,6 +12,10 @@ export function Header() {
       setVisibleTags(4);
     }
   }
+
+  useEffect(() => {
+    handleResizeWindow()
+  }, [])
 
   window.addEventListener("resize", handleResizeWindow);
 
