@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { GithubLogo } from "phosphor-react";
+import { GithubLogo } from "@phosphor-icons/react";
+
 import { data } from "../assets/data";
 
 export function Header() {
@@ -13,11 +14,11 @@ export function Header() {
     }
   }
 
+  window.addEventListener("resize", handleResizeWindow);
+
   useEffect(() => {
     handleResizeWindow()
   }, [])
-
-  window.addEventListener("resize", handleResizeWindow);
 
   return (
     <header className="bg-gray-950 flex flex-col items-center rounded-sm md:rounded-md lg:rounded-lg p-2 md:p-4 lg:p-6 gap-1 md:gap-2 lg:gap-4">
@@ -37,11 +38,11 @@ export function Header() {
         target="_blank"
         rel="noreferrer"
       >
-        @{data.person.links.github.user} on{" "}
+        @{data.person.links.github.user} on &nbsp;
         <GithubLogo className="size-4 md:size-6 lg:size-8" alt="GitHub logo" />
       </a>
       <address>
-        <small>
+        <small className="text-base">
           <a href={`mailto:${data.person.links.email}`}>
             {data.person.links.email}
           </a>

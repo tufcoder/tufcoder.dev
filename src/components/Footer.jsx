@@ -24,7 +24,9 @@ export function Footer() {
           url="https://tailwindcss.com/docs/installation/using-vite"
         />
       </ul>
-      <small className="text-gray-500">©{new Date().getFullYear()}</small>
+      <small className="text-gray-500">
+        ©{new Date().getFullYear()}
+      </small>
     </footer>
   );
 }

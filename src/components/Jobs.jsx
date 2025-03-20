@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import { data } from "../assets/data";
 
 export function Jobs() {
@@ -51,7 +52,7 @@ export function Jobs() {
               })}
             </ul>
           </div>
-        </article >,
+        </article>
       );
     }
   };

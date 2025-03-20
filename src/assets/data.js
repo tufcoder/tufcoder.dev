@@ -250,7 +250,7 @@ export const data = {
       ],
     },
     ampsoft: {
-      name: "Ampsoft: Soluções de Negócios para Seguradoras - SIES ERP",
+      name: "Ampsoft: Tecnologia para Seguros - SIES ERP",
       url: "https://www.ampsoft.com.br/",
       bg: {
         default: "linear-gradient(to right light-green, green)",
