@@ -54,7 +54,7 @@
         }
       },
       {
-        "name": "MS-SQL",
+        "name": "SQL Server",
         "bg": {
           "default": "orange",
           "tailwind": "bg-orange-400"
@@ -157,7 +157,7 @@
     ],
     "databases": {
       "relational": [
-        "MS-SQL Server",
+        "SQL Server",
         "Oracle",
         "MySQL",
         "SQLite",
@@ -285,6 +285,13 @@
             "default": "green",
             "tailwind": "bg-green-800"
           }
+        },
+        {
+          "name": "Git",
+          "bg": {
+            "default": "red",
+            "tailwind": "bg-red-500"
+          }
         }
       ]
     },
@@ -301,7 +308,7 @@
       "works": [
         "Participação nos projetos SISS Hospitalar e SISS Ambulatorial.",
         "Desenvolvimento e manutenção com o .NET Framework utilizando Web Forms e MVC.",
-        "Bancos de dados: MS-SQL Server e Oracle.",
+        "Bancos de dados: SQL Server e Oracle.",
         "Software no conceito DDD (Domain-Driven Design).",
         "RESTful APIs e documentação com Swagger.",
         "JWT Tokens e Autenticação com OAuth.",
@@ -320,7 +327,7 @@
           }
         },
         {
-          "name": "MS-SQL",
+          "name": "SQL Server",
           "bg": {
             "default": "orange",
             "tailwind": "bg-orange-400"
@@ -355,7 +362,7 @@
       "works": [
         "Análise, manutenção e desenvolvimento de software ERP para Seguros com o .NET Framework (3.5+) e .NET Core",
         "Desenvolvimento e manutenção de Web Forms.",
-        "Bancos de dados: MS-SQL Server.",
+        "Bancos de dados: SQL Server.",
         "Desenvolvimento e manutenção de Stored Procedures, Triggers, Views e Jobs.",
         "Desenvolvimento e manutenção de relatórios utilizando o Reporting Services.",
         "Levantamento de Requisitos e documentação.",
@@ -370,10 +377,17 @@
           }
         },
         {
-          "name": "MS-SQL",
+          "name": "SQL Server",
           "bg": {
             "default": "orange",
             "tailwind": "bg-orange-400"
+          }
+        },
+        {
+          "name": "TFS",
+          "bg": {
+            "default": "cyan",
+            "tailwind": "bg-blue-400"
           }
         },
         {
@@ -444,7 +458,7 @@
       "works": [
         "Responsável pela manutenção, gerenciamento e evoluções do website e demais hotsites do sistema de ensino Piaget com a linguagem ASP.",
         "Desenvolvimento de jogos com o Adobe Flash e ActionScript 2.0 através do sistema de ensino multimídia do Jean Piaget para Ensino Fundamental e Médio, exclusivo para seus alunos.",
-        "Experiência em administração de bancos de dados com o MS-SQL Server.",
+        "Experiência em administração de bancos de dados com o SQL Server.",
         "Experiência em aplicar o processo seletivo e treinamento de novos estagiários com o Adobe Flash, ActionScript e ASP."
       ],
       "tags": [
@@ -463,7 +477,7 @@
           }
         },
         {
-          "name": "MS-SQL",
+          "name": "SQL Server",
           "bg": {
             "default": "orange",
             "tailwind": "bg-orange-400"
