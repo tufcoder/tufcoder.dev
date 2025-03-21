@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types'
 
 export function FooterListItem({ url, icon, alt, text }) {
   return (
@@ -7,13 +7,13 @@ export function FooterListItem({ url, icon, alt, text }) {
         href={url}
         target="_blank"
         rel="noreferrer noopener"
-        className="inline-flex gap-1 items-baseline"
+        className="inline-flex items-baseline gap-1"
       >
         <img src={icon} alt={alt} className="size-4 self-center" />
         <span>{text}</span>
       </a>
     </li>
-  );
+  )
 }
 
 FooterListItem.propTypes = {
@@ -21,4 +21,4 @@ FooterListItem.propTypes = {
   icon: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
-};
+}

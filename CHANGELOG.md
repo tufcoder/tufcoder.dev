@@ -3,9 +3,15 @@
 Somente atualizações Major (Maior) ou Minor (Menor).
 Patchs serão ignorados nesse arquivo de histórico.
 
+## Versão 2.1.0 (2025-03-20)
+
+* DEV: Mudança para o formato json do arquivo `data`.
+    * Adoção do `Prettier` para formatação do código fonte.
+* UI: Adição de link para o CHANGELOG no Github.
+
 ## Versão 2.0.0 (2025-02-27)
 
-* Recriação do site, v2. Utilizando Vite, React e Tailwind.
+* DEV: Recriação do site, `v2`. Utilizando Vite, React e Tailwind.
 
 ## Versão 1.8.0 (2024-07-22)
 
@@ -41,4 +47,4 @@ Patchs serão ignorados nesse arquivo de histórico.
 
 ## Versão 1.0.0 (2023-01-02)
 
-* Lançamento inicial, v1. Utilizando HTML, CSS E JS.
+* DEV: Lançamento inicial, `v1`. Utilizando HTML, CSS E JS.
